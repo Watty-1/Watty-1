@@ -192,7 +192,73 @@ Copied!
 This file should now contain the contents of the tasks.txt file that you added and saved in previous steps:
 
   Completed tasks
-  1. Managed file structure in /home/analyst
+   Managed file structure in /home/analyst
+
+  2.ADD USERS WITH LINUX
+  
+  Task 1. Add a new user
+A new employee has joined the Research department. In this task, you must add them to the system. The username assigned to them is researcher9.
+
+Write a command to add a user called researcher9 to the system.
+The command to complete this step:
+
+sudo useradd researcher9
+Copied!
+Next, you need to add the new user to the research_team group.
+
+Use the usermod command and -g option to add researcher9 to the research_team group as their primary group.
+The command to complete this step:
+
+sudo usermod -g research_team researcher9
+Copied!
+You could alternatively use the following variation of useradd when creating the user to perform both steps at once:
+
+sudo useradd researcher9 -g research_team
+Copied!
+Click Check my progress to verify that you have completed this task correctly.
+
+Add a new user
+Task 2. Assign file ownership
+The new employee, researcher9, will take responsibility for project_r. In this task, you must make them the owner of the project_r.txt file.
+
+The project_r.txt file is located in the /home/researcher2/projects directory, and owned by the researcher2 user.
+
+Use the chown command to make researcher9 the owner of /home/researcher2/projects/project_r.txt.
+The command to complete this step:
+
+sudo chown researcher9 /home/researcher2/projects/project_r.txt
+Copied!
+Click Check my progress to verify that you have completed this task correctly.
+
+Assign file ownership
+Task 3. Add the user to a secondary group
+A couple of months later, this employee's role at the organization has changed, and they are working in both the Research and the Sales departments.
+
+In this task, you must add researcher9 to a secondary group (sales_team). Their primary group is still research_team.
+
+Use the usermod command with the -a and -G options to add researcher9 to the sales_team group as a secondary group.
+The command to complete this step:
+
+sudo usermod -a -G sales_team researcher9
+Copied!
+Note: Options for Linux commands are case-sensitive, so make sure you use a lowercase -a and an uppercase -G.
+Click Check my progress to verify that you have completed this task correctly.
+
+Add the user to a secondary group
+Task 4. Delete a user
+A year later, researcher9, decided to leave the company. In this task, you must remove them from the system.
+
+Run a command to delete researcher9 from the system:
+sudo userdel researcher9
+Copied!
+This command will output the following message:
+
+Userdel: Group researcher9 not removed because it is not the primary group of user researcher9.  
+This is expected.
+
+Note: When you create a new user in Linux, a group with the same name as the user is automatically created and the user is the only member of that group. After removing users, it is good practice to clean up any such empty groups that may remain behind.
+Run the following command to delete the researcher9 group that is no longer required:
+sudo groupdel researcher9
 •	Applying filters to SQL queries
 
 •	Identifying vulnerabilities, threats and risks
