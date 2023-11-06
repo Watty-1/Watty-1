@@ -20,14 +20,21 @@
 •	Applying filters to SQL queries
 
 •	Identifying vulnerabilities, threats and risks
+
 • incident response and recovery using NIST CSF 
+
 •	Documenting incidents with an incident handler’s journal 
 
 •	Importing and parsing a text file in a security-related scenario
 
 •	Automate Cybersecurity Tasks with Python
 
-- 📫 You can contact me on wattienk@gmail.com
+- 📫 You can contact me on: Email wattienk@gmail.com
+ 
+                            Phone: +2783 724 8693
+  
+                            linkedin.com/in/watson-nkomo-188216a6
+  
 
 <!---
 Watty-1/Watty-1 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
