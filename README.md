@@ -54,6 +54,7 @@ analyst@0691f6bfd0a3:~/logs$ head server_logs.txt
 analyst@0691f6bfd0a3:~/log
 
 • Using Linux commands to manage file permissions
+
 Task 1. Create a new directory
 First, you must create a dedicated subdirectory called logs, which will be used to store all future log files.
 
