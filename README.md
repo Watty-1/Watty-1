@@ -10,7 +10,7 @@
 
 •	Conducting a security audit
 
-• Mantain a strong security posture
+• Mantaining a strong security posture
  (employ NIST Frameworks, Controls and CIA Triad)
  
 •	Analyzing network structure and security
