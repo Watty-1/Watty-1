@@ -24,7 +24,7 @@
  
                             Phone: +2783 724 8693
   
-                            linkedin.com/in/watson-nkomo-188216a6
+                            linkedin.com/in/watson-nkomo
   
 
 <!---
